@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-header-menu {
+  .v-btn__overlay {
+    display: none !important;
+  }
+
+  &&.v-btn {
+    text-transform: none !important;
+  }
+}
+
+.custom-input {
+  .v-field__input, .v-input__prepend {
+    padding: 4px 0 !important;
+  }
+  .v-input__prepend {
+    @apply !items-center
+  }
+}
+
+.search-bar .v-field.v-field--appended {
+  padding-right: 0!important;
+}
